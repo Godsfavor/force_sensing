@@ -42,10 +42,6 @@ hx711_udp_publisher_14-48.py   ──UDP──▶    gripper_force_bridge.py
 
 ### 1. Copy files to the Pi
 
-```bash
-scp hx711_udp_publisher_14-48.py pi@192.168.2.2:/tmp/
-scp hx711_14-48.service          pi@192.168.2.2:/tmp/
-```
 
 ### 2. Install on the Pi
 
@@ -62,17 +58,13 @@ sudo pip3 install RPi.GPIO
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable hx711_14-48.service
-sudo systemctl start  hx711_14-48.service
-```
+sudo systemctl enable
+
 
 ### 4. Check it is running
 
 ```bash
-sudo systemctl status hx711_14-48.service
-# or follow the live log:
-journalctl -u hx711_14-48.service -f
-```
+sudo systemctl status
 
 ## Running the ROS2 Bridge (Laptop)
 
