@@ -90,22 +90,6 @@ which is negligible for gripper control. Set `median_window:=1` to disable.
 
 ---
 
-## Configuration Reference
-
-### Pi publisher (`hx711_udp_publisher_14-48.py`)
-
-| Constant | Default | Description |
-|----------|---------|-------------|
-| `LAPTOP_IP` | `192.168.2.1` | UDP destination |
-| `UDP_PORT` | `9870` | Must match bridge |
-| `RATE_HZ` | `20` | Publishing rate |
-| `PIN_SCK` | `4` | GPIO clock pin |
-| `PIN_DT` | `5` | GPIO data pin |
-| `JUMP_THRESHOLD` | `100,000` | Max count change per sample |
-| `WARMUP_DISCARD` | `10` | Samples thrown away at startup |
-| `WARMUP_COLLECT` | `10` | Samples used to establish baseline |
-| `RECOVERY_SAMPLES` | `10` | Rejected samples needed to trigger auto-recovery |
-| `RECOVERY_SPREAD` | `50,000` | Agreement tolerance for auto-recovery |
 
 ### Laptop bridge (`gripper_force_bridge.py`)
 
