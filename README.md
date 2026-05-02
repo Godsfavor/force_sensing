@@ -53,7 +53,7 @@ Make sure your ROS2 environment is sourced, then:
 ros2 run gripper_force_bridge.py or your launch file
 ```
 
-Force data will appear on `/gripper/force`:
+Force data will appear on `/force`:
 
 ```bash
 ros2 topic echo /gripper/force
