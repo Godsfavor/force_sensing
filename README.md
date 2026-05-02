@@ -6,28 +6,7 @@ a ROS2 topic on your laptop.
 
 ---
 
-## System Overview
 
-```
-BlueROV2 Raspberry Pi                       Laptop
-─────────────────────────────────           ──────────────────────────────
-HX711 (GPIO 4/5)                            
-    │                                       
-    ▼                                       
-hx711_udp_publisher_14-48.py   ──UDP──▶    gripper_force_bridge.py
-(runs as hx711.service)         9870         │
-                                             ▼
-                                        /gripper/force
-                                    (geometry_msgs/WrenchStamped)
-```
-
-| File | Runs on | Purpose |
-|------|---------|---------|
-| `hx711_udp_publisher_14-48.py` | BlueROV2 Pi | Reads HX711 sensor, sends UDP packets |
-| `hx711_14-48.service` | BlueROV2 Pi | systemd service to auto-start the publisher |
-| `gripper_force_bridge.py` | Your laptop | Receives UDP, publishes ROS2 topic |
-
----
 
 ## Hardware Setup
 
