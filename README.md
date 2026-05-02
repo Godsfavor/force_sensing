@@ -63,9 +63,9 @@ ros2 topic echo /gripper/force
 
 ### Layer 2 — Laptop side (`gripper_force_bridge.py`)
 
-A 3-sample rolling median on the raw counts kills any remaining
+A 3-sample rolling on the raw counts kills any remaining
 single-sample electrical spikes. At 20 Hz this adds ~100 ms latency,
-which is negligible for gripper control. Set `median_window:=1` to disable.
+which is negligible for gripper control. 
 
 ---
 
