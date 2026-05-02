@@ -70,14 +70,3 @@ which is negligible for gripper control.
 ---
 
 
-### Laptop bridge (`gripper_force_bridge.py`)
-
-| Parameter | Default | Description |
-|-----------|---------|-------------|
-| `offset` | `0.0` | Raw count at zero load |
-| `slope` | `1.0` | Raw counts per Newton |
-| `frame_id` | `gripper` | ROS2 frame ID in message header |
-| `median_window` | `3` | Rolling median window size (set to 1 to disable) |
-
----
-
